@@ -22,13 +22,14 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <div className="border-b-2">
-          <h2>Root</h2>
+        <div className="border-b-2" style={{'border-bottom':'solid', 'margin-bottom':'10px'}}>
+          <strong>Root</strong>
+          <input style={{'margin-left':'10px'}}></input>
           <nav>
             <Link to="/posts" className="text-xl text-blue-600">
               Blog Posts
             </Link>
-            <Link to="/posts/admin" className="text-xl text-blue-600 underline">
+            <Link to="/admin" className="text-xl text-blue-600 underline" style={{'margin-left':'10px'}}>
               Blog Admin
             </Link>
           </nav>
